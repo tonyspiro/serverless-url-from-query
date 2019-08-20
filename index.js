@@ -3,7 +3,7 @@ module.exports.handler = (event, context, callback) => {
     statusCode: 200,
     headers: {
       'Access-Control-Allow-Origin': '*',
-      'Content-Type': 'text/plain'
+      'Content-Type: application/json'
     },
     body: event && event.queryStringParameters && event.queryStringParameters.url ? event.queryStringParameters.url : ''
   };
