@@ -5,7 +5,7 @@ module.exports.handler = (event, context, callback) => {
       'Access-Control-Allow-Origin': '*',
       'Content-Type': 'text/plain'
     },
-    body: event && event.query && event.query.url ? event.query.url : ''
+    body: event && event.queryStringParameters && event.queryStringParameters.url ? event.queryStringParameters.url : ''
   };
   callback(null, response);
 }
