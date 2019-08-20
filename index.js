@@ -5,7 +5,7 @@ module.exports.handler = (event, context, callback) => {
       'Access-Control-Allow-Origin': '*',
       'Content-Type': 'text/plain'
     },
-    body: 'Hello world! Custom message: ' + process.env.CUSTOM_MESSAGE + ' Event body: ' + (event ? event.body : null)
+    body: event && event.query && event.query.url ? event.query.url : ''
   };
   callback(null, response);
 }

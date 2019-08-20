@@ -1,23 +1,13 @@
 {
-  "title": "Function Starter",
-  "description": "Cosmic JS Function starter.",
+  "title": "Get URL from Query",
+  "description": "Get URL from Query (for Slack Slash Commands).",
   "image_url": "https://cosmicjs.com/images/marketing/logo-w-brand.jpg",
-  "repo_url": "https://github.com/cosmicjs/function-starter",
-  "env_vars": [
-    {
-      "key": "CUSTOM_MESSAGE",
-      "value": ""
-    }
-  ],
+  "repo_url": "https://github.com/tonyspiro/serverless-url-from-query",
+  "env_vars": null,
   "routes": [
     {
-      "path": "hello-world",
+      "path": "url",
       "method": "get",
-      "cors": true
-    },
-    {
-      "path": "poster",
-      "method": "post",
       "cors": true
     }
   ]
